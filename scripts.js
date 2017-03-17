@@ -4,7 +4,7 @@ canvas.height = canvas.scrollHeight;
 var ctx = canvas.getContext('2d');
 var image = new Image();
 image.src = './ground.png';
-var pieces = JSON.parse(readJSON('./piecesredo'));
+//var pieces = JSON.parse(readJSON('./piecesredo'));
 
 function Piece(space,color) {
   var _this = this;
@@ -154,7 +154,7 @@ function readJSON(file){
 
 //readJSON('./board.json');
 //function getSpace() {
-  canvas.addEventListener("mouseup",getPosition,false);
+  canvas.addEventListener("click",getPosition,false);
   canvas.addEventListener("mousedown",movePiece,false);
 
 
